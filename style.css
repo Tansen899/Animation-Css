@@ -1,0 +1,38 @@
+.field{
+    border: 1px solid;
+    height: 300px;
+}
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+img{
+    height: 400px;
+}
+
+.bat{
+    transition: transform 0.2s ease-in;
+}
+.field:hover .ball{
+    transform: translate(300px,-200px);
+}
+.ball{
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(red,black);
+    border-radius: 25px;
+    position: relative;
+    left: 460px;
+    bottom: 65px;
+    transition: transform 0.7s ease-out 0.2s;
+}
+
+.catch{
+    position: relative;
+    left: 720px;
+    bottom: 500px;
+}
+
+.field:hover .catch{
+    transform: translate(-100px);
+}
